@@ -1,0 +1,19 @@
+﻿//キーボードマクロのファイル
+S_GoFileTop(0);	// ファイルの先頭に移動
+S_Cut(0);	// 切り取り
+S_IndentSpace(0);	// SPACEインデント
+S_Char(105);	// 文字入力
+S_Char(110);	// 文字入力
+S_IndentSpace(0);	// SPACEインデント
+S_Char(40);	// 文字入力
+S_Char(39);	// 文字入力
+S_ReplaceAll('\\r\\n', '\\n', 60);	// すべて置換
+S_ReDraw(0);	// 再描画
+S_ReplaceAll('\\n', '\',\'', 60);	// すべて置換
+S_ReDraw(0);	// 再描画
+S_GoLineEnd(0);	// 行末に移動(折り返し単位)
+S_Char(39);	// 文字入力
+S_Char(41);	// 文字入力
+S_Char(13);	// 文字入力
+S_SelectAll(0);	// すべて選択
+S_Cut(0);	// 切り取り
